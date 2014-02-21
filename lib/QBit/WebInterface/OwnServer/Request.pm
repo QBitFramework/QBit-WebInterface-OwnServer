@@ -53,7 +53,7 @@ sub http_header {
 
 sub method {shift->{'method'}}
 
-sub uri {shift->{'uri'}}
+sub _uri {shift->{'uri'}}
 
 sub scheme {'http'}
 
