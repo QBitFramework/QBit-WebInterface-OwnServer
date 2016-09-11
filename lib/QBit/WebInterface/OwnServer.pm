@@ -194,3 +194,33 @@ sub __normalize_path {
 }
 
 TRUE;
+
+__END__
+
+=encoding utf8
+
+=head1 Name
+
+QBit::WebInterface::OwnServer - WebInterface with own HTTP server.
+
+=head1 GitHub
+
+https://github.com/Madskill/QBit-WebInterface-OwnServer
+
+=head1 Install
+
+=over
+
+=item *
+
+cpanm QBit::WebInterface::OwnServer
+
+=item *
+
+apt-get install libqbit-webinterface-ownserver-perl (http://perlhub.ru/)
+
+=back
+
+For more information. please, see code.
+
+=cut
