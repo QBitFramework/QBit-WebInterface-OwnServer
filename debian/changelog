@@ -1,3 +1,12 @@
+libqbit-webinterface-ownserver-perl (0.007) saucy; urgency=low
+
+  * upload to cpan
+
+  * Allowing HEAD request
+  * To make `curl -I http://127.0.0.1:5000` work
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Sun, 11 Sep 2016 17:56:18 +0300
+
 libqbit-webinterface-ownserver-perl (0.006) saucy; urgency=low
 
   * Fixed utf8 data
