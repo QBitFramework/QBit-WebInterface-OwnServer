@@ -21,7 +21,7 @@ sub run {
         Listen    => SOMAXCONN,
         Reuse     => 1,
       )
-      || throw gettext('Cannot create socket');
+      || throw Exception gettext('Cannot create socket');
 
     l "http://127.0.0.1:$opts{'port'}";
     l "Ctrl+C to terminate";
@@ -68,7 +68,8 @@ sub run {
           . (
             exists($QBit::WebInterface::HTTP_STATUSES{$status})
             ? " $QBit::WebInterface::HTTP_STATUSES{$status}"
-            : 'Unknown')
+            : 'Unknown'
+          )
           . "\n";
         print $socket 'Server: QBit::WebInterface::OwnServer (' . ref($self) . ")\n";
         print $socket 'Set-Cookie: ' . $_->as_string() . "\n" foreach values(%{$self->response->cookies});
